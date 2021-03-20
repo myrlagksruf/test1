@@ -10,4 +10,4 @@ app.get('/', (req, res) => {
 
 app.use('/public', express.static('./data'));
 
-app.listen(4000, () => console.log('서버'));
+app.listen(80, () => console.log('서버'));
