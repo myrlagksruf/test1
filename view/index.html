@@ -8,5 +8,16 @@
 </head>
 <body>
     <h1>시발</h1>
+    <h2>이제야 된다.</h2>
+    <h3></h3>
+    <script>
+        const h3 = document.querySelector('h3');
+        const main = () => {
+            const date = new Date();
+            h3.innerHTML = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()};${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+            requestAnimationFrame(main);
+        };
+        main();
+    </script>
 </body>
 </html>
